@@ -1,0 +1,32 @@
+software =
+{
+        version = "0.1";
+
+        hardware-compatibility = [ "revA" ];
+
+        /* differentiate running image modes/sets */
+        stable =
+        {
+                main:
+                {
+                        images: (
+                        {
+                                filename = "core-image-minimal-bananapi-m2-plus.ext4";
+                                device = "/dev/mmcblk0p3";
+                                installed-directly = TRUE;
+                        }
+                        );
+                };
+                alt:
+                {
+                        images: (
+                        {
+                                filename = "core-image-minimal-bananapi-m2-plus.ext4";
+                                device = "/dev/mmcblk0p2";
+                                installed-directly = TRUE;
+                        }
+                        );
+                };
+
+        };
+}
