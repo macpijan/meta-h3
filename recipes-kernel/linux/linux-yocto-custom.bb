@@ -36,13 +36,17 @@ SRC_URI += "file://defconfig"
 
 DEPENDS += "openssl"
 
-KBRANCH = "orange-pi-4.8"
+KBRANCH = "orange-pi-4.9-hdmi"
 
-LINUX_VERSION ?= "4.8"
+LINUX_VERSION ?= "4.9-rc1"
 LINUX_VERSION_EXTENSION ?= "-orange-pi"
 
-SRCREV="e0be459bb1138094666bc5260f69c3a448fa825f"
+# rev for branch orange-pi-4.9-hdmi
+SRCREV="3517d2635a36f63761c1a7472c3087914ca3f54e"
 
-PV = "${LINUX_VERSION}+git${SRCPV}"
+# rev for branch orange-pi-4.8
+#SRCREV="e0be459bb1138094666bc5260f69c3a448fa825f"
 
-COMPATIBLE_MACHINE_h3 = "h3"
+PV = "${LINUX_VERSION}"
+
+COMPATIBLE_MACHINE = "sun8i"
