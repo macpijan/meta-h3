@@ -32,15 +32,7 @@ require recipes-kernel/linux/linux-yocto.inc
 
 SRC_URI = "git://github.com/megous/linux.git;protocol=git;bareclone=1;branch=${KBRANCH}"
 
-SRC_URI += "file://defconfig \
-            file://0001-linux-armbian-banana-patches.patch \
-           "
-
-#SRC_URI += "file://h3.scc \
-#            file://h3.cfg \
-#            file://h3-user-config.cfg \
-#            file://h3-user-patches.scc \
-#           "
+SRC_URI += "file://defconfig"
 
 DEPENDS += "openssl"
 
