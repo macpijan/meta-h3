@@ -29,9 +29,9 @@ DEFAULT_PREFERENCE_sun8i="1"
 SRC_URI += "file://boot.cmd \
            "
 
-SRCREV = "8cbb389bb3da80cbf8911f8386cbff92c6a78afe"
+SRCREV = "a705ebc81b7f91bbd0ef7c634284208342901149"
 
-PV = "v2016.09"
+PV = "v2017.01"
 
 PE = "1"
 
