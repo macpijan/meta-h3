@@ -36,16 +36,13 @@ SRC_URI += "file://defconfig"
 
 DEPENDS += "openssl"
 
-KBRANCH = "orange-pi-4.9-hdmi"
+KBRANCH = "orange-pi-4.9"
 
-LINUX_VERSION ?= "4.9-rc1"
+LINUX_VERSION ?= "4.9.13"
 LINUX_VERSION_EXTENSION ?= "-orange-pi"
 
-# rev for branch orange-pi-4.9-hdmi
-SRCREV="3517d2635a36f63761c1a7472c3087914ca3f54e"
-
-# rev for branch orange-pi-4.8
-#SRCREV="e0be459bb1138094666bc5260f69c3a448fa825f"
+# rev for branch orange-pi-4.9
+SRCREV="a21d0f5b1059efa5199cdc45d2b9b1aabde56ef6"
 
 PV = "${LINUX_VERSION}"
 
